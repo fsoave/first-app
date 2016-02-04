@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MAA Guide</string>
+
+    <string name="cheese_ipsum">Jarlsberg lancashire edam. Dolcelatte hard cheese brie st. agur blue
+    cheese caerphilly bavarian bergkase cheese and biscuits mascarpone. </string>
+    <string name="checkin">Checkin</string>
+
+    <!-- Main Option Menu -->
+    <string name="menu_contact">Contact me</string>
+    <string name="menu_info">Info</string>
+    <string name="menu_author">About the author</string>
+    <string name="rateapp">Rate app</string>
+
+    <!-- Character detail view Menu -->
+    <string name="menu_settings">Settings</string>
+
+  <!-- Webview menu item -->
+    <string name="webview_refresh">Refresh</string>
+    <string name="webview_homepage">HomePage</string>
+    <string name="webview_chrome">Open in Chrome</string>
+    <!-- nome activity -->
+    <string name="webview_activity">WebView</string>
+</resources>

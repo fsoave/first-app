@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.support.android.designlibdemo">
+
+    <!-- permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.DesignDemo">
+
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- GENERAL CHARACTER -->
+        <activity android:name=".character.character_activity.CharacterActivity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".character.character_activity.CharacterDetailActivity"
+            android:parentActivityName=".character.character_activity.CharacterActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <!-- PROVA -->
+        <activity android:name=".webview.WebviewActivity"
+            android:parentActivityName=".MainActivity"
+            android:label="@string/webview_activity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <!-- OPTION MENU MAIN ACTIVITY -->
+        <activity android:name=".optionmenu.menumain.OptionMenuMainActivity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+    </application>
+
+</manifest>

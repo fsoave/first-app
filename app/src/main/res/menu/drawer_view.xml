@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_news"
+            android:icon="@drawable/ic_dashboard"
+            android:title="News" />
+        <item
+            android:id="@+id/nav_myhero"
+            android:icon="@drawable/ic_dashboard"
+            android:title="My Hero" />
+        <item
+            android:id="@+id/nav_heroes"
+            android:icon="@drawable/ic_event"
+            android:title="Heroes" />
+        <item
+            android:id="@+id/nav_enemies"
+            android:icon="@drawable/ic_headset"
+            android:title="Enemies" />
+        <item
+            android:id="@+id/nav_lockbox"
+            android:icon="@drawable/ic_headset"
+            android:title="Lockboxes heroes" />
+        <item
+            android:id="@+id/nav_pvp_hero"
+            android:icon="@drawable/ic_headset"
+            android:title="PVP heroes" />
+        <item
+            android:id="@+id/nav_specop_hero"
+            android:icon="@drawable/ic_headset"
+            android:title="Spec op hero" />
+        <item
+            android:id="@+id/nav_coverthero"
+            android:icon="@drawable/ic_headset"
+            android:title="Covert task heroes" />
+        <item
+            android:id="@+id/nav_group_boss"
+            android:icon="@drawable/ic_headset"
+            android:title="Group boss" />
+    </group>
+
+    <item android:title="Sub items">
+        <menu>
+            <item
+                android:id="@+id/nav_gvg"
+                android:icon="@drawable/ic_forum"
+                android:title="PVP" />
+            <item
+                android:id="@+id/nav_this_gvg"
+                android:icon="@drawable/ic_forum"
+                android:title="Current PVP" />
+            <item
+                android:id="@+id/nav_specop"
+                android:icon="@drawable/ic_forum"
+                android:title="Special Ops" />
+            <item
+                android:id="@+id/nav_this_specop"
+                android:icon="@drawable/ic_forum"
+                android:title="Current Special Ops" />
+            <item
+                android:id="@+id/nav_ms1"
+                android:icon="@drawable/ic_forum"
+                android:title="Mission season 1" />
+            <item
+                android:id="@+id/nav_ms2"
+                android:icon="@drawable/ic_forum"
+                android:title="Mission season 2" />
+        </menu>
+    </item>
+
+</menu>
