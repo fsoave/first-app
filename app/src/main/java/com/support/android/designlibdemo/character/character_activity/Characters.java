@@ -139,6 +139,7 @@ public class Characters {                                                       
         characterDatas.put("Mr. Fantastic", new CharacterData("Mr. Fantastic", R.drawable.mr_fantastic, R.drawable.mr_fantastic_dial));
         characterDatas.put("Quake", new CharacterData("Quake", R.drawable.quake, R.drawable.quake_dial));
         characterDatas.put("War Machine", new CharacterData("War Machine", R.drawable.war_machine, R.drawable.war_machine_dial));
+        characterDatas.put("Lizard", new CharacterData("Lizard", R.drawable.lizard, R.drawable.example_dialogue));  // TODO: 04/02/16 manca dialog lizard
         return characterDatas;
     }
 
@@ -237,6 +238,7 @@ public class Characters {                                                       
         characterDatas.put("Superior Spider-Man", new CharacterData("Superior Spider-Man", R.drawable.superior_spider_man, R.drawable.superior_spiderman_dial));
         characterDatas.put("Boomerang", new CharacterData("Boomerang", R.drawable.boomerang, R.drawable.boomerang_dial));
         characterDatas.put("Howard the Duck", new CharacterData("Howard the Duck", R.drawable.howard_the_duck, R.drawable.howard_the_duck_dial));
+        characterDatas.put("Lizard", new CharacterData("Lizard", R.drawable.lizard, R.drawable.example_dialogue));  // TODO: 04/02/16 manca dialog lizard
         return characterDatas;
     }
 
