@@ -121,7 +121,7 @@ public class Characters {                                                       
         characterDatas.put("Moonstone", new CharacterData("Moonstone", R.drawable.moonstone, R.drawable.moonstone_dial));
         characterDatas.put("Kang", new CharacterData("Kang", R.drawable.kang, R.drawable.kang_dial));
         characterDatas.put("Superior Spider-Man", new CharacterData("Superior Spider-Man", R.drawable.superior_spider_man, R.drawable.superior_spiderman_dial));
-        characterDatas.put("Boomerang", new CharacterData("Boomerang", R.drawable.boomerang, R.drawable.example_dialogue)); //manca dialog image
+        characterDatas.put("Boomerang", new CharacterData("Boomerang", R.drawable.boomerang, R.drawable.boomerang_dial));
         characterDatas.put("Howard the Duck", new CharacterData("Howard the Duck", R.drawable.howard_the_duck, R.drawable.howard_the_duck_dial));
         characterDatas.put("Emma Frost", new CharacterData("Emma Frost", R.drawable.emma_frost, R.drawable.emma_frost_dial));
         characterDatas.put("Hank Pym", new CharacterData("Hank Pym", R.drawable.hank_pym, R.drawable.hank_pym_dial));
@@ -147,7 +147,7 @@ public class Characters {                                                       
         characterDatas.put("Satana", new CharacterData("Satana", R.drawable.satana, R.drawable.satana_dial));
         characterDatas.put("Elektra", new CharacterData("Elektra", R.drawable.elektra, R.drawable.elektra_dial));
         characterDatas.put("Enchantress", new CharacterData("Enchantress", R.drawable.enchantress, R.drawable.enchantress_dial));
-        characterDatas.put("Winter Soldier", new CharacterData("Winter Soldier", R.drawable.baron_mordo, R.drawable.example_dialogue)); //manca icona
+        characterDatas.put("Winter Soldier", new CharacterData("Winter Soldier", R.drawable.winter_soldier, R.drawable.winter_soldier_dial));
         characterDatas.put("Falcon", new CharacterData("Falcon", R.drawable.falcon, R.drawable.falcon_dial));
         characterDatas.put("Star-Lord", new CharacterData("Star-Lord", R.drawable.star_lord, R.drawable.starlord_dial));
         characterDatas.put("Ultimate Spider-Man", new CharacterData("Ultimate Spider-Man", R.drawable.ultimate_spider_man, R.drawable.ultimate_spiderman_dial));
@@ -179,7 +179,7 @@ public class Characters {                                                       
         characterDatas.put("Destroyer", new CharacterData("Destroyer", R.drawable.destroyer, R.drawable.destroyer_dial));
         characterDatas.put("Mockingbird", new CharacterData("Mockingbird", R.drawable.mockingbird, R.drawable.mockingbird_dial));
         characterDatas.put("Silk", new CharacterData("Silk", R.drawable.silk, R.drawable.silk_dial));
-        characterDatas.put("Red She-Hulk", new CharacterData("Red She-Hulk", R.drawable.baron_mordo, R.drawable.example_dialogue));  //manca icona
+        characterDatas.put("Red She-Hulk", new CharacterData("Red She-Hulk", R.drawable.redshehulk, R.drawable.redshehulk_dial));
         characterDatas.put("Angel", new CharacterData("Angel", R.drawable.angel, R.drawable.angel_dial));
         characterDatas.put("Spider-Man Noir", new CharacterData("Spider-Man Noir", R.drawable.spider_man_noir, R.drawable.spiderman_noir_dial));
         characterDatas.put("Colleen Wing", new CharacterData("Colleen Wing", R.drawable.colleen_wing, R.drawable.colleen_wing_dial));
@@ -222,7 +222,7 @@ public class Characters {                                                       
         characterDatas.put("Satana", new CharacterData("Satana", R.drawable.satana, R.drawable.satana_dial));
         characterDatas.put("Elektra", new CharacterData("Elektra", R.drawable.elektra, R.drawable.elektra_dial));
         characterDatas.put("Enchantress", new CharacterData("Enchantress", R.drawable.enchantress, R.drawable.enchantress_dial));
-        characterDatas.put("Winter Soldier", new CharacterData("Winter Soldier", R.drawable.baron_mordo, R.drawable.example_dialogue)); //manca icona
+        characterDatas.put("Winter Soldier", new CharacterData("Winter Soldier", R.drawable.winter_soldier, R.drawable.winter_soldier_dial));
         return characterDatas;
     }
 
@@ -235,7 +235,7 @@ public class Characters {                                                       
         characterDatas.put("Moonstone", new CharacterData("Moonstone", R.drawable.moonstone, R.drawable.moonstone_dial));
         characterDatas.put("Kang", new CharacterData("Kang", R.drawable.kang, R.drawable.kang_dial));
         characterDatas.put("Superior Spider-Man", new CharacterData("Superior Spider-Man", R.drawable.superior_spider_man, R.drawable.superior_spiderman_dial));
-        characterDatas.put("Boomerang", new CharacterData("Boomerang", R.drawable.boomerang, R.drawable.example_dialogue));
+        characterDatas.put("Boomerang", new CharacterData("Boomerang", R.drawable.boomerang, R.drawable.boomerang_dial));
         characterDatas.put("Howard the Duck", new CharacterData("Howard the Duck", R.drawable.howard_the_duck, R.drawable.howard_the_duck_dial));
         return characterDatas;
     }
@@ -296,7 +296,7 @@ public class Characters {                                                       
         characterDatas = new TreeMap<>();
         characterDatas.put("Mockingbird", new CharacterData("Mockingbird", R.drawable.mockingbird, R.drawable.mockingbird_dial));
         characterDatas.put("Silk", new CharacterData("Silk", R.drawable.silk, R.drawable.silk_dial));
-        characterDatas.put("Red She-Hulk", new CharacterData("Red She-Hulk", R.drawable.baron_mordo, R.drawable.baron_mordo_dial));  //manca icona
+        characterDatas.put("Red She-Hulk", new CharacterData("Red She-Hulk", R.drawable.redshehulk, R.drawable.redshehulk_dial));
         return characterDatas;
     }
 
@@ -397,6 +397,7 @@ public class Characters {                                                       
     public static Map<String, CharacterData > getCovertTactical(){
         characterDatas = new TreeMap<>();
         characterDatas.put("Doctor Doom", new CharacterData("Doctor Doom", R.drawable.doctor_doom, R.drawable.dr_doom_dial));
+        characterDatas.put("Howard the Duck", new CharacterData("Howard the Duck", R.drawable.howard_the_duck, R.drawable.howard_the_duck_dial));
         return characterDatas;
     }
 
