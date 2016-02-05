@@ -139,8 +139,10 @@ public class Characters {                                                       
         characterDatas.put("Mr. Fantastic", new CharacterData("Mr. Fantastic", R.drawable.mr_fantastic, R.drawable.mr_fantastic_dial));
         characterDatas.put("Quake", new CharacterData("Quake", R.drawable.quake, R.drawable.quake_dial));
         characterDatas.put("War Machine", new CharacterData("War Machine", R.drawable.war_machine, R.drawable.war_machine_dial));
-        characterDatas.put("Lizard", new CharacterData("Lizard", R.drawable.lizard, R.drawable.example_dialogue));  // TODO: 04/02/16 manca dialog lizard
-        characterDatas.put("Kraven the Hunter", new CharacterData("Kraven the Hunter", R.drawable.kraven, R.drawable.example_dialogue));  // TODO: 04/02/16 manca dialog kraven
+        // TODO: 04/02/16 manca dialog lizard
+        characterDatas.put("Lizard", new CharacterData("Lizard", R.drawable.lizard, R.drawable.example_dialogue));
+        // TODO: 04/02/16 manca dialog kraven
+        characterDatas.put("Kraven the Hunter", new CharacterData("Kraven the Hunter", R.drawable.kraven, R.drawable.example_dialogue));
         return characterDatas;
     }
 

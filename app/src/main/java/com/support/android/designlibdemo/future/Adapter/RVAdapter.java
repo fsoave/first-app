@@ -40,7 +40,6 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.CharacterViewHolde
             mView = itemView;
             cv = (CardView)itemView.findViewById(R.id.cv);
             personName = (TextView)itemView.findViewById(R.id.person_name);
-            //avatar = (CircleImageView)itemView.findViewById(R.id.avatar_circle);
             avatar = (ImageView)itemView.findViewById(R.id.avatar_circle);
         }
     }
