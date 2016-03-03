@@ -78,6 +78,8 @@ public class Characters {                                                       
         characterDatas.put("Phoenix", new CharacterData("Phoenix", R.drawable.phoenix, R.drawable.phoenix_dial));
         characterDatas.put("Scarlet Witch", new CharacterData("Scarlet Witch", R.drawable.scarlet_witch, R.drawable.scarlet_witch_dial));
         characterDatas.put("Storm", new CharacterData("Storm", R.drawable.storm, R.drawable.storm_dial));
+        //TODO: MANCA DIALOG IMAGE
+        characterDatas.put("Electro", new CharacterData("Electro", R.drawable.electro, R.drawable.example_dialogue));
         return characterDatas;
     }
 
@@ -109,6 +111,8 @@ public class Characters {                                                       
         characterDatas.put("Union Jack", new CharacterData("Union Jack", R.drawable.union_jack, R.drawable.union_jack_dial));
         characterDatas.put("Wolverine", new CharacterData("Wolverine", R.drawable.wolverine, R.drawable.wolverine_dial));
         characterDatas.put("Kamala Khan", new CharacterData("Kamala Khan", R.drawable.kamala_khan, R.drawable.kamala_khan_dial));
+        //TODO: MANCA DIALOG IMAGE
+        characterDatas.put("Hellcat", new CharacterData("Hellcat", R.drawable.hellcat, R.drawable.example_dialogue));
         return characterDatas;
     }
 
@@ -208,6 +212,8 @@ public class Characters {                                                       
         characterDatas.put("Hybrid", new CharacterData("Hybrid", R.drawable.hybrid, R.drawable.hybrid_dial));
         characterDatas.put("Blizzard", new CharacterData("Blizzard", R.drawable.blizzard, R.drawable.blizzard_dial));
         characterDatas.put("Baron Mordo", new CharacterData("Baron Mordo", R.drawable.baron_mordo, R.drawable.baron_mordo_dial));
+        //TODO: MANCA DIALOG IMAGE
+        characterDatas.put("Electro", new CharacterData("Electro", R.drawable.electro, R.drawable.example_dialogue));
         return characterDatas;
     }
 
@@ -341,6 +347,8 @@ public class Characters {                                                       
         characterDatas.put("Drax", new CharacterData("Drax", R.drawable.drax, R.drawable.drax_dial));
         characterDatas.put("Karnak", new CharacterData("Karnak", R.drawable.karnak, R.drawable.karnak_dial));
         characterDatas.put("Angela", new CharacterData("Angela", R.drawable.angela, R.drawable.angela_dial));
+        //TODO: MANCA DIALOG IMAGE
+        characterDatas.put("Hellcat", new CharacterData("Hellcat", R.drawable.hellcat, R.drawable.example_dialogue));
         return characterDatas;
     }
 
