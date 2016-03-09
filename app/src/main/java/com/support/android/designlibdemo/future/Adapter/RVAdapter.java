@@ -83,8 +83,12 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.CharacterViewHolde
                 Map<String, BiopicData> biopics = Biopics.getBiopic();
                 if (biopics.containsKey(characters.get(i).getName())){
                     characters.get(i).setBiopic(biopics.get(characters.get(i).getName()).getBio());
+                    if (characters.get(i).getBiopic() == ""){
+                        characters.get(i).setBiopic("Unknown data");
+                    }
                     intent.putExtra("bio", characters.get(i).getBiopic());
                 }else{
+                    // if character is not in BiopicData
                     intent.putExtra("bio", "Unknown");
                 }
 
