@@ -19,10 +19,13 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 import com.support.android.designlibdemo.R;
+import com.support.android.designlibdemo.character.character_activity.Biopic;
 import com.support.android.designlibdemo.character.character_activity.CharacterData;
 import com.support.android.designlibdemo.character.character_activity.CharacterDetailActivity;
+import com.support.android.designlibdemo.character.character_activity.Characters;
 
 import java.util.List;
+import java.util.Map;
 
 public class RVAdapter extends RecyclerView.Adapter<RVAdapter.CharacterViewHolder> {
 
@@ -74,6 +77,17 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.CharacterViewHolde
                 Intent intent = new Intent(context, CharacterDetailActivity.class);
                 intent.putExtra(CharacterDetailActivity.EXTRA_NAME, characters.get(i).getName());
                 intent.putExtra("class_type", characters.get(i).getDrawableDialog());
+
+                //attach biopic
+                Map<String, Biopic> biopics = Characters.getBiopic();
+                if (biopics.containsKey(characters.get(i).getName())){
+                    characters.get(i).setBiopic(biopics.get(characters.get(i).getName()).getBio());
+                    //intent.putExtra("bio", biopics.get(characters.get(i).getName()).getBio());
+                    intent.putExtra("bio", characters.get(i).getBiopic());
+                }else{
+                    intent.putExtra("bio", "Unknown");
+                }
+
                 context.startActivity(intent);
             }
         });

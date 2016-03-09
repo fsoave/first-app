@@ -85,13 +85,10 @@ public class CharacterActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 //prendi tutti gli eroi selezionati e falli diventare "miei"
-
                 Snackbar.make(view, "Hero added to roaster", Snackbar.LENGTH_LONG)
                         //.setAction(R.string.snackbar_action_undo, clickListener)
                         .setAction("Action", null).show();
-
             }
         });
 

@@ -8,8 +8,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageView;
+import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
 import com.support.android.designlibdemo.R;
 
 
@@ -21,8 +21,9 @@ import com.support.android.designlibdemo.R;
  */
 public class CharacterDetailActivity extends AppCompatActivity {
 
-    public static final String EXTRA_NAME = "cheese_name";
+    public static final String EXTRA_NAME = "";
     private int class_type;
+    private String bio;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -32,6 +33,9 @@ public class CharacterDetailActivity extends AppCompatActivity {
         Intent intent = getIntent();
         final String characterName = intent.getStringExtra(EXTRA_NAME);
         class_type = intent.getIntExtra("class_type", 000);
+
+        bio = intent.getStringExtra("bio");
+        loadBio();
 
         final Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -58,6 +62,12 @@ public class CharacterDetailActivity extends AppCompatActivity {
         final ImageView imageView = (ImageView) findViewById(R.id.backdrop);
         //use the dialog version of the hero image. when available
         imageView.setImageResource(class_type);
+    }
+
+    private void loadBio() {
+        final TextView text = (TextView) findViewById(R.id.biopic);
+        //use the dialog version of the hero image. when available
+        text.setText(bio);
     }
 
     @Override

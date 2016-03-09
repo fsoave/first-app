@@ -11,8 +11,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import com.support.android.designlibdemo.R;
 import com.support.android.designlibdemo.character.groupboss.GBoss;
-import com.support.android.designlibdemo.character.hero.Heroes;
-import com.support.android.designlibdemo.character.lockbox.Lockboxes;
 import com.support.android.designlibdemo.future.Adapter.RVAdapter;
 import com.support.android.designlibdemo.utils.CharactersInString;
 
@@ -31,7 +29,6 @@ public class CharacterListFragment extends Fragment {
     String class_type;
     String[] character_type;
     Map<String, CharacterData> CharacterDataMap;
-    int drawable;
     private RecyclerView rv;
     public List<CharacterData> characters;
 
@@ -47,7 +44,6 @@ public class CharacterListFragment extends Fragment {
         }else{
             String[] type = null;
         }
-        //setupRecyclerView(rv);
 
         LinearLayoutManager llm = new LinearLayoutManager(getActivity());
         rv.setLayoutManager(llm);
@@ -79,7 +75,6 @@ public class CharacterListFragment extends Fragment {
         class_type = bundle.getString("class");
         String type = bundle.getString("type");
         if (class_type.equals("lockbox")){
-            drawable = Lockboxes.getRandomDrawable();
             if (type.equals("Bruiser")){ CharacterDataMap = Characters.getLockBoxesBruiser(); initializeData2(CharacterDataMap);}
             if (type.equals("Blaster")){ CharacterDataMap = Characters.getLockBoxesBlaster();  initializeData2(CharacterDataMap);}
             if (type.equals("Scrapper")){ CharacterDataMap = Characters.getLockBoxesScrapper(); initializeData2(CharacterDataMap);}
@@ -89,7 +84,6 @@ public class CharacterListFragment extends Fragment {
 
         }
         if (class_type.equals("hero")){
-            drawable = Heroes.getRandomDrawable();
             if (type.equals("Bruiser")){ CharacterDataMap = Characters.getHeroBruiser(); initializeData2(CharacterDataMap);}
             if (type.equals("Blaster")){ CharacterDataMap = Characters.getHeroBlaster(); initializeData2(CharacterDataMap);}
             if (type.equals("Scrapper")){ CharacterDataMap = Characters.getHeroScrapper(); initializeData2(CharacterDataMap);}
@@ -150,80 +144,4 @@ public class CharacterListFragment extends Fragment {
         }
         return list;
     }
-
-    /*private void setupRecyclerView(RecyclerView recyclerView) {
-        recyclerView.setLayoutManager(new LinearLayoutManager(recyclerView.getContext()));
-        recyclerView.setAdapter(new SimpleStringRecyclerViewAdapter(getActivity(),
-                getList(character_type)));
-    }
-
-    public class SimpleStringRecyclerViewAdapter
-            extends RecyclerView.Adapter<SimpleStringRecyclerViewAdapter.ViewHolder> {
-
-        private final TypedValue mTypedValue = new TypedValue();
-        private int mBackground;
-        private List<String> mValues;
-
-        public class ViewHolder extends RecyclerView.ViewHolder {
-            public String mBoundString;
-            public final View mView;
-            public final ImageView mImageView;
-            public final TextView mTextView;
-            public ViewHolder(View view) {
-                super(view);
-                mView = view;
-                mImageView = (ImageView) view.findViewById(R.id.avatar);
-                mTextView = (TextView) view.findViewById(android.R.id.text1);
-            }
-
-            @Override
-            public String toString() {
-                return super.toString() + " '" + mTextView.getText();
-            }
-        }
-
-        public String getValueAt(int position) {
-            return mValues.get(position);
-        }
-
-        public SimpleStringRecyclerViewAdapter(Context context, List<String> items) {
-            context.getTheme().resolveAttribute(R.attr.selectableItemBackground, mTypedValue, true);
-            mBackground = mTypedValue.resourceId;
-            mValues = items;
-        }
-
-        @Override
-        public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-            View view = LayoutInflater.from(parent.getContext())
-                    .inflate(R.layout.list_item, parent, false);
-            view.setBackgroundResource(mBackground);
-            return new ViewHolder(view);
-        }
-
-        @Override
-        public void onBindViewHolder(final ViewHolder holder, int position) {
-            holder.mBoundString = mValues.get(position);
-            holder.mTextView.setText(mValues.get(position));
-
-            holder.mView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Context context = v.getContext();
-                    Intent intent = new Intent(context, CharacterDetailActivity.class);
-                    intent.putExtra(CharacterDetailActivity.EXTRA_NAME, holder.mBoundString);
-                    intent.putExtra("class_type", class_type);
-                    context.startActivity(intent);
-                }
-                
-            });
-
-            Glide.with(holder.mImageView.getContext())
-                    .load(ImageGlide.glideImage(class_type) )
-                    .fitCenter()
-                    .into(holder.mImageView);
-        }
-
-        @Override
-        public int getItemCount() { return mValues.size();}
-    }*/
 }
