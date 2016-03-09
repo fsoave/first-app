@@ -71,9 +71,10 @@
                         android:textAppearance="@style/TextAppearance.AppCompat.Title" />
 
                     <TextView
+                        android:id="@+id/biopic"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/cheese_ipsum" />
+                        android:layout_height="wrap_content"></TextView>
+                        <!-- android:text="@string/cheese_ipsum" /> -->
 
                 </LinearLayout>
 
