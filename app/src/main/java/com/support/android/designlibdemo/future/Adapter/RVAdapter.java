@@ -76,7 +76,7 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.CharacterViewHolde
             public void onClick(View v) {
                 Context context = v.getContext();
                 Intent intent = new Intent(context, CharacterDetailActivity.class);
-                intent.putExtra(CharacterDetailActivity.EXTRA_NAME, characters.get(i).getName());
+                intent.putExtra(CharacterDetailActivity.EXTRA_NAME, characters.get(i).getName()); //TODO: modificare quando covertlist fragment sarà modificata
                 intent.putExtra("dialog_image", characters.get(i).getDrawableDialog());
 
                 //attach biopic
