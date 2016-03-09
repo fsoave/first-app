@@ -78,8 +78,7 @@ public class Characters {                                                       
         characterDatas.put("Phoenix", new CharacterData("Phoenix", R.drawable.phoenix, R.drawable.phoenix_dial));
         characterDatas.put("Scarlet Witch", new CharacterData("Scarlet Witch", R.drawable.scarlet_witch, R.drawable.scarlet_witch_dial));
         characterDatas.put("Storm", new CharacterData("Storm", R.drawable.storm, R.drawable.storm_dial));
-        //TODO: MANCA DIALOG IMAGE
-        characterDatas.put("Electro", new CharacterData("Electro", R.drawable.electro, R.drawable.example_dialogue));
+        characterDatas.put("Electro", new CharacterData("Electro", R.drawable.electro, R.drawable.electro_dial));
         return characterDatas;
     }
 
@@ -212,8 +211,7 @@ public class Characters {                                                       
         characterDatas.put("Hybrid", new CharacterData("Hybrid", R.drawable.hybrid, R.drawable.hybrid_dial));
         characterDatas.put("Blizzard", new CharacterData("Blizzard", R.drawable.blizzard, R.drawable.blizzard_dial));
         characterDatas.put("Baron Mordo", new CharacterData("Baron Mordo", R.drawable.baron_mordo, R.drawable.baron_mordo_dial));
-        //TODO: MANCA DIALOG IMAGE
-        characterDatas.put("Electro", new CharacterData("Electro", R.drawable.electro, R.drawable.example_dialogue));
+        characterDatas.put("Electro", new CharacterData("Electro", R.drawable.electro, R.drawable.electro_dial));
         return characterDatas;
     }
 
