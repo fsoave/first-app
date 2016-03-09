@@ -66,7 +66,6 @@ public class CharacterDetailActivity extends AppCompatActivity {
 
     private void loadBio() {
         final TextView text = (TextView) findViewById(R.id.biopic);
-        //use the dialog version of the hero image. when available
         text.setText(bio);
     }
 

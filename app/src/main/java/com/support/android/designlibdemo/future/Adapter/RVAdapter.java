@@ -19,7 +19,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 import com.support.android.designlibdemo.R;
-import com.support.android.designlibdemo.character.character_activity.Biopic;
+import com.support.android.designlibdemo.character.character_activity.BiopicData;
+import com.support.android.designlibdemo.character.character_activity.Biopics;
 import com.support.android.designlibdemo.character.character_activity.CharacterData;
 import com.support.android.designlibdemo.character.character_activity.CharacterDetailActivity;
 import com.support.android.designlibdemo.character.character_activity.Characters;
@@ -79,10 +80,9 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.CharacterViewHolde
                 intent.putExtra("class_type", characters.get(i).getDrawableDialog());
 
                 //attach biopic
-                Map<String, Biopic> biopics = Characters.getBiopic();
+                Map<String, BiopicData> biopics = Biopics.getBiopic();
                 if (biopics.containsKey(characters.get(i).getName())){
                     characters.get(i).setBiopic(biopics.get(characters.get(i).getName()).getBio());
-                    //intent.putExtra("bio", biopics.get(characters.get(i).getName()).getBio());
                     intent.putExtra("bio", characters.get(i).getBiopic());
                 }else{
                     intent.putExtra("bio", "Unknown");

@@ -10,11 +10,11 @@ import java.util.TreeMap;
  *
  */
 
-public class Biopic {
+public class BiopicData {
 
     private String bio;
 
-    public Biopic(String bio){
+    public BiopicData(String bio){
         this.setBio(bio);
     }
 
