@@ -77,7 +77,7 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.CharacterViewHolde
                 Context context = v.getContext();
                 Intent intent = new Intent(context, CharacterDetailActivity.class);
                 intent.putExtra(CharacterDetailActivity.EXTRA_NAME, characters.get(i).getName());
-                intent.putExtra("class_type", characters.get(i).getDrawableDialog());
+                intent.putExtra("dialog_image", characters.get(i).getDrawableDialog());
 
                 //attach biopic
                 Map<String, BiopicData> biopics = Biopics.getBiopic();

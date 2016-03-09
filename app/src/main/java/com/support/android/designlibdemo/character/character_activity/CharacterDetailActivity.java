@@ -22,7 +22,7 @@ import com.support.android.designlibdemo.R;
 public class CharacterDetailActivity extends AppCompatActivity {
 
     public static final String EXTRA_NAME = "";
-    private int class_type;
+    private int dialogImage;
     private String bio;
 
     @Override
@@ -32,7 +32,7 @@ public class CharacterDetailActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         final String characterName = intent.getStringExtra(EXTRA_NAME);
-        class_type = intent.getIntExtra("class_type", 000);
+        dialogImage = intent.getIntExtra("dialog_image", 000);
 
         bio = intent.getStringExtra("bio");
         loadBio();
@@ -61,7 +61,7 @@ public class CharacterDetailActivity extends AppCompatActivity {
     private void loadBackdrop() {
         final ImageView imageView = (ImageView) findViewById(R.id.backdrop);
         //use the dialog version of the hero image. when available
-        imageView.setImageResource(class_type);
+        imageView.setImageResource(dialogImage);
     }
 
     private void loadBio() {
