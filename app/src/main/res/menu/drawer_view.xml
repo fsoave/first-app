@@ -41,6 +41,27 @@
             android:title="Group boss" />
     </group>
 
+    <item android:title="Follow us:">
+        <menu>
+            <item
+                android:id="@+id/facebook"
+                android:icon="@drawable/ic_forum"
+                android:title="Facebook" />
+            <item
+                android:id="@+id/twitter"
+                android:icon="@drawable/ic_forum"
+                android:title="Twitter" />
+            <item
+                android:id="@+id/googleplus"
+                android:icon="@drawable/ic_forum"
+                android:title="Google+" />
+            <item
+                android:id="@+id/Instagram"
+                android:icon="@drawable/ic_forum"
+                android:title="Instagram" />
+        </menu>
+    </item>
+
     <item android:title="Sub items">
         <menu>
             <item
