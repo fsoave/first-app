@@ -16,7 +16,7 @@ public class GBoss {
 
     public static final String[] sGroupBossStrings = {
             "Ultron", "Red Skull", "BlackHeart", "Thanos", "Kurse", "Arcade", "Hybrid", "Bastion",
-            "High Evolutionary", "Surtur", "Karn", "Dracula", "Kingpin"
+            "High Evolutionary", "Surtur", "Karn", "Dracula", "Kingpin", "Zzzax",
     };
 
 }
