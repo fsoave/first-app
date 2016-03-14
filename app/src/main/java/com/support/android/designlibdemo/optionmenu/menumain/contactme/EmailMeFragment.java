@@ -43,7 +43,7 @@ public class EmailMeFragment extends Fragment {
         textMessage = (EditText) myFragmentView.findViewById(R.id.editTextMessage); //create a hint
         image = (ImageView) myFragmentView.findViewById(R.id.imageView);
 
-        Glide.with(this).load(R.drawable.example_dialogue).centerCrop().into(image);
+        image.setImageResource(R.drawable.hulk_dial);
 
         /* Because when the EditText is first touched it calls the focus event and
            on second touch it call the click event so you have to disable
