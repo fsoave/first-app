@@ -2,6 +2,8 @@ package com.support.android.designlibdemo;
 
 
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
@@ -24,6 +26,9 @@ public class MainActivity extends AppCompatActivity{
     private View content;
     private String type;
     private String option_type;
+
+
+    String facebook_url = "https://www.facebook.com/fabio.soave.7";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -138,18 +143,65 @@ public class MainActivity extends AppCompatActivity{
                                 drawerMenuHelper(menuItem, type);
                                 return true;
 
+                            case id.facebook:
+                                PackageManager pm = getPackageManager();
+                                Intent intent = newFacebookIntent(pm, facebook_url);
+                                startActivity(intent);
+                                return true;
+
+                            case id.twitter:
+                                PackageManager pm1 = getPackageManager();
+                                Intent intent_twitter = newTwitterIntent(pm1);
+                                startActivity(intent_twitter);
+                                return true;
+
                             default:
                                 return true;
                         }
                     }
                 });
+
     }
 
-  private void drawerMenuHelper(MenuItem menuItem, String type){
+    private void drawerMenuHelper(MenuItem menuItem, String type){
         menuItem.setChecked(true);
         mDrawerLayout.closeDrawers();
         Intent intent = new Intent(content.getContext(), CharacterActivity.class);
         intent.putExtra("character_type", type);
         startActivity(intent);
-  }
+    }
+
+    /* Facebook reference
+    * http://stackoverflow.com/questions/4810803/open-facebook-page-from-android-app
+    *
+    */
+    public static Intent newFacebookIntent(PackageManager pm, String url) {
+        Uri uri;
+        try {
+            pm.getPackageInfo("com.facebook.katana", 0);
+            // http://stackoverflow.com/a/24547437/1048340
+            uri = Uri.parse("fb://facewebmodal/f?href=" + url);
+        } catch (PackageManager.NameNotFoundException e) {
+            uri = Uri.parse(url);
+        }
+        return new Intent(Intent.ACTION_VIEW, uri);
+    }
+
+    /* Twitter reference
+    * http://mytwitterid.com/
+    * http://stackoverflow.com/questions/11105103/open-page-in-twitter-app-from-other-app-android
+    * */
+    public static Intent newTwitterIntent(PackageManager pm) {
+        Intent intent = null;
+        try {
+            // get the Twitter app if possible
+            pm.getPackageInfo("com.twitter.android", 0);
+            intent = new Intent(Intent.ACTION_VIEW, Uri.parse("twitter://user?user_id="+ "935528545"));
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        } catch (Exception e) {
+            // no Twitter app, revert to browser
+            intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://twitter.com/mrcelsius1"));
+        }
+        return intent;
+    }
 }

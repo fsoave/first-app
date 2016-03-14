@@ -41,7 +41,7 @@
             android:title="Group boss" />
     </group>
 
-    <item android:title="Follow us:">
+    <item android:title="Follow us">
         <menu>
             <item
                 android:id="@+id/facebook"
