@@ -50,6 +50,10 @@
                 android:icon="@drawable/ic_forum"
                 android:title="Facebook" />
             <item
+                android:id="@+id/fb_groups"
+                android:icon="@drawable/ic_forum"
+                android:title="Facebook Groups" />
+            <item
                 android:id="@+id/twitter"
                 android:icon="@drawable/ic_forum"
                 android:title="Twitter" />
