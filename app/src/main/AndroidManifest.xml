@@ -33,13 +33,6 @@
             android:screenOrientation="portrait">
         </activity>
 
-        <!-- PROVA -->
-        <activity android:name=".webview.WebviewActivity"
-            android:parentActivityName=".MainActivity"
-            android:label="@string/webview_activity"
-            android:screenOrientation="portrait">
-        </activity>
-
         <!-- OPTION MENU MAIN ACTIVITY -->
         <activity android:name=".optionmenu.menumain.OptionMenuMainActivity"
             android:parentActivityName=".MainActivity"
