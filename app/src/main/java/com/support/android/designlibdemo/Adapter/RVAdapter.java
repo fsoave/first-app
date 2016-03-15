@@ -1,4 +1,4 @@
-package com.support.android.designlibdemo.future.Adapter;
+package com.support.android.designlibdemo.Adapter;
 
 /**
  * Created by fabio on 06/11/15.
@@ -8,6 +8,7 @@ package com.support.android.designlibdemo.future.Adapter;
  * http://code.tutsplus.com/tutorials/getting-started-with-recyclerview-and-cardview-on-android--cms-23465
  * https://github.com/tutsplus/Android-CardViewRecyclerView/blob/master/ListsAndCards/app/src/main/java/com/hathy/listsandcards/RVAdapter.java
  */
+
 import android.content.Context;
 import android.content.Intent;
 import android.support.v7.widget.CardView;
@@ -18,12 +19,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
 import com.support.android.designlibdemo.R;
 import com.support.android.designlibdemo.character.character_activity.BiopicData;
 import com.support.android.designlibdemo.character.character_activity.Biopics;
 import com.support.android.designlibdemo.character.character_activity.CharacterData;
 import com.support.android.designlibdemo.character.character_activity.CharacterDetailActivity;
-import com.support.android.designlibdemo.character.character_activity.Characters;
 
 import java.util.List;
 import java.util.Map;

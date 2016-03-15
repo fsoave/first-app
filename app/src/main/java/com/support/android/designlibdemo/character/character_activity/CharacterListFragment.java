@@ -9,9 +9,10 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.support.android.designlibdemo.Adapter.RVAdapter;
 import com.support.android.designlibdemo.R;
 import com.support.android.designlibdemo.character.groupboss.GBoss;
-import com.support.android.designlibdemo.future.Adapter.RVAdapter;
 import com.support.android.designlibdemo.utils.CharactersInString;
 
 import java.util.ArrayList;

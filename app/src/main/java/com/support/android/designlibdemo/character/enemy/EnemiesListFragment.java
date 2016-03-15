@@ -4,7 +4,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -18,7 +17,6 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.support.android.designlibdemo.R;
 import com.support.android.designlibdemo.character.character_activity.CharacterDetailActivity;
-import com.support.android.designlibdemo.future.Adapter.RVAdapter;
 import com.support.android.designlibdemo.future.database.MiniCharacter2;
 
 import java.util.ArrayList;

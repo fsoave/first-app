@@ -1,12 +1,8 @@
 package com.support.android.designlibdemo.character.lockbox;
 
 import com.support.android.designlibdemo.R;
-import com.support.android.designlibdemo.utils.ClassType;
 
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * Created by fabio on 22/10/15.

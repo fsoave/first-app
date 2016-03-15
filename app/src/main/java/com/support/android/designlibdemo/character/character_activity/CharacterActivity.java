@@ -1,8 +1,8 @@
 package com.support.android.designlibdemo.character.character_activity;
 
 import android.content.Intent;
-import android.database.Cursor;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
@@ -10,26 +10,13 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v4.widget.SimpleCursorAdapter;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.View;
-import android.support.design.widget.FloatingActionButton;
 
 import com.support.android.designlibdemo.R;
-import com.support.android.designlibdemo.character.covert.CovertListFragment;
-import com.support.android.designlibdemo.character.enemy.EnemiesListFragment;
-import com.support.android.designlibdemo.character.groupboss.GBossListFragment;
-import com.support.android.designlibdemo.character.hero.HeroesListFragment;
-import com.support.android.designlibdemo.character.lockbox.Lockboxes;
-import com.support.android.designlibdemo.character.lockbox.LockboxesListFragment;
-import com.support.android.designlibdemo.character.pvp.PvpListFragment;
-import com.support.android.designlibdemo.character.specop.SpecOpListFragment;
-import com.support.android.designlibdemo.utils.ClassType;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
 /**

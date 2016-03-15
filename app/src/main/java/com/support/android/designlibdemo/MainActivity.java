@@ -15,10 +15,13 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+
 import com.support.android.designlibdemo.character.character_activity.CharacterActivity;
 import com.support.android.designlibdemo.optionmenu.menumain.OptionMenuMainActivity;
 
-import static com.support.android.designlibdemo.R.*;
+import static com.support.android.designlibdemo.R.drawable;
+import static com.support.android.designlibdemo.R.id;
+import static com.support.android.designlibdemo.R.layout;
 
 public class MainActivity extends AppCompatActivity{
 
@@ -27,8 +30,11 @@ public class MainActivity extends AppCompatActivity{
     private String type;
     private String option_type;
 
+    private String facebook_id = "100000854413331";
+    private String facebook_url = "https://www.facebook.com/fabio.soave.7";
 
-    String facebook_url = "https://www.facebook.com/fabio.soave.7";
+    private String fb_group_id ="685204534959411";
+    private String fb_group_url ="https://www.facebook.com/groups/685204534959411";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -145,13 +151,19 @@ public class MainActivity extends AppCompatActivity{
 
                             case id.facebook:
                                 PackageManager pm = getPackageManager();
-                                Intent intent = newFacebookIntent(pm, facebook_url);
-                                startActivity(intent);
+                                Intent intent_fb = newFacebookIntent(pm, facebook_id, facebook_url);
+                                startActivity(intent_fb);
+                                return true;
+
+                            case id.fb_groups:
+                                PackageManager pm1 = getPackageManager();
+                                Intent intent_gr = newFacebookGroupsIntent(pm1, fb_group_id, fb_group_url);
+                                startActivity(intent_gr);
                                 return true;
 
                             case id.twitter:
-                                PackageManager pm1 = getPackageManager();
-                                Intent intent_twitter = newTwitterIntent(pm1);
+                                PackageManager pm2 = getPackageManager();
+                                Intent intent_twitter = newTwitterIntent(pm2);
                                 startActivity(intent_twitter);
                                 return true;
 
@@ -173,16 +185,28 @@ public class MainActivity extends AppCompatActivity{
 
     /* Facebook reference
     * http://stackoverflow.com/questions/4810803/open-facebook-page-from-android-app
-    *
+    * http://findmyfbid.com/
     */
-    public static Intent newFacebookIntent(PackageManager pm, String url) {
+    /* user_profile */
+    public static Intent newFacebookIntent(PackageManager pm, String facebook_id, String facebook_url) {
         Uri uri;
         try {
             pm.getPackageInfo("com.facebook.katana", 0);
             // http://stackoverflow.com/a/24547437/1048340
-            uri = Uri.parse("fb://facewebmodal/f?href=" + url);
+            uri = Uri.parse("fb://profile/" + facebook_id);
         } catch (PackageManager.NameNotFoundException e) {
-            uri = Uri.parse(url);
+            uri = Uri.parse(facebook_url);
+        }
+        return new Intent(Intent.ACTION_VIEW, uri);
+    }
+    /* groups */
+    public static Intent newFacebookGroupsIntent(PackageManager pm, String fb_group_id, String fb_group_url) {
+        Uri uri;
+        try {
+            pm.getPackageInfo("com.facebook.groups", 0);
+            uri = Uri.parse("fb://group/" + fb_group_id);
+        } catch (PackageManager.NameNotFoundException e) {
+            uri = Uri.parse(fb_group_url);
         }
         return new Intent(Intent.ACTION_VIEW, uri);
     }

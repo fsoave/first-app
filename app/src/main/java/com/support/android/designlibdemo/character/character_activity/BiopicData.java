@@ -1,10 +1,5 @@
 package com.support.android.designlibdemo.character.character_activity;
 
-import com.support.android.designlibdemo.R;
-
-import java.util.Map;
-import java.util.TreeMap;
-
 /**
  * Created by fabio on 9/3/16.
  *
