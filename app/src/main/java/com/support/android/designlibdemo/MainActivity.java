@@ -18,6 +18,7 @@ import android.view.View;
 
 import com.support.android.designlibdemo.character.character_activity.CharacterActivity;
 import com.support.android.designlibdemo.optionmenu.menumain.OptionMenuMainActivity;
+import com.support.android.designlibdemo.social.Social;
 
 import static com.support.android.designlibdemo.R.drawable;
 import static com.support.android.designlibdemo.R.id;
@@ -30,11 +31,13 @@ public class MainActivity extends AppCompatActivity{
     private String type;
     private String option_type;
 
-    private String facebook_id = "100000854413331";
+    /*private String facebook_id = "100000854413331";
     private String facebook_url = "https://www.facebook.com/fabio.soave.7";
 
     private String fb_group_id ="685204534959411";
-    private String fb_group_url ="https://www.facebook.com/groups/685204534959411";
+    private String fb_group_url ="https://www.facebook.com/groups/685204534959411";*/
+
+    Social socialManager = new Social();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -150,20 +153,20 @@ public class MainActivity extends AppCompatActivity{
                                 return true;
 
                             case id.facebook:
-                                PackageManager pm = getPackageManager();
-                                Intent intent_fb = newFacebookIntent(pm, facebook_id, facebook_url);
+                                //PackageManager pm = getPackageManager();
+                                Intent intent_fb = socialManager.newFacebookIntent(getPackageManager());
                                 startActivity(intent_fb);
                                 return true;
 
                             case id.fb_groups:
-                                PackageManager pm1 = getPackageManager();
-                                Intent intent_gr = newFacebookGroupsIntent(pm1, fb_group_id, fb_group_url);
+                                //PackageManager pm1 = getPackageManager();
+                                Intent intent_gr = socialManager.newFacebookGroupsIntent(getPackageManager());
                                 startActivity(intent_gr);
                                 return true;
 
                             case id.twitter:
-                                PackageManager pm2 = getPackageManager();
-                                Intent intent_twitter = newTwitterIntent(pm2);
+                                //PackageManager pm2 = getPackageManager();
+                                Intent intent_twitter = socialManager.newTwitterIntent(getPackageManager());
                                 startActivity(intent_twitter);
                                 return true;
 
@@ -183,49 +186,4 @@ public class MainActivity extends AppCompatActivity{
         startActivity(intent);
     }
 
-    /* Facebook reference
-    * http://stackoverflow.com/questions/4810803/open-facebook-page-from-android-app
-    * http://findmyfbid.com/
-    */
-    /* user_profile */
-    public static Intent newFacebookIntent(PackageManager pm, String facebook_id, String facebook_url) {
-        Uri uri;
-        try {
-            pm.getPackageInfo("com.facebook.katana", 0);
-            // http://stackoverflow.com/a/24547437/1048340
-            uri = Uri.parse("fb://profile/" + facebook_id);
-        } catch (PackageManager.NameNotFoundException e) {
-            uri = Uri.parse(facebook_url);
-        }
-        return new Intent(Intent.ACTION_VIEW, uri);
-    }
-    /* groups */
-    public static Intent newFacebookGroupsIntent(PackageManager pm, String fb_group_id, String fb_group_url) {
-        Uri uri;
-        try {
-            pm.getPackageInfo("com.facebook.groups", 0);
-            uri = Uri.parse("fb://group/" + fb_group_id);
-        } catch (PackageManager.NameNotFoundException e) {
-            uri = Uri.parse(fb_group_url);
-        }
-        return new Intent(Intent.ACTION_VIEW, uri);
-    }
-
-    /* Twitter reference
-    * http://mytwitterid.com/
-    * http://stackoverflow.com/questions/11105103/open-page-in-twitter-app-from-other-app-android
-    * */
-    public static Intent newTwitterIntent(PackageManager pm) {
-        Intent intent = null;
-        try {
-            // get the Twitter app if possible
-            pm.getPackageInfo("com.twitter.android", 0);
-            intent = new Intent(Intent.ACTION_VIEW, Uri.parse("twitter://user?user_id="+ "935528545"));
-            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        } catch (Exception e) {
-            // no Twitter app, revert to browser
-            intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://twitter.com/mrcelsius1"));
-        }
-        return intent;
-    }
 }
