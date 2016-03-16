@@ -2,8 +2,6 @@ package com.support.android.designlibdemo;
 
 
 import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
@@ -30,12 +28,6 @@ public class MainActivity extends AppCompatActivity{
     private View content;
     private String type;
     private String option_type;
-
-    /*private String facebook_id = "100000854413331";
-    private String facebook_url = "https://www.facebook.com/fabio.soave.7";
-
-    private String fb_group_id ="685204534959411";
-    private String fb_group_url ="https://www.facebook.com/groups/685204534959411";*/
 
     Social socialManager = new Social();
 
