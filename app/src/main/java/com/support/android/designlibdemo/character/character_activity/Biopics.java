@@ -247,7 +247,7 @@ public class Biopics {
         biopics.put("Emma Frost", new BiopicData(""));
         biopics.put("Hank Pym", new BiopicData(""));
         biopics.put("Rescue", new BiopicData(""));
-        biopics.put("Black Bolt", new BiopicData(""));
+        biopics.put("Black Bolt", new BiopicData("Even amongst the race of super-powered Inhumans, Blackagar Boltagon's abilities are terrifyingly destructive. Blessed and cursed with a voice that can shatter whole planets, Black Bolt must keep forever mute, lest a single incautious whisper kill everyone around him. As the King of the Inhumans, it is his duty to protect the Inhuman city of Attilan and guide his people through an uncertain future."));
         biopics.put("Fantomex", new BiopicData(""));
         biopics.put("Red Hulk", new BiopicData(""));
         biopics.put("Black Knight", new BiopicData(""));
