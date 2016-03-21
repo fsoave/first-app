@@ -16,7 +16,7 @@ import android.view.View;
 
 import com.support.android.designlibdemo.character.character_activity.CharacterActivity;
 import com.support.android.designlibdemo.optionmenu.menumain.OptionMenuMainActivity;
-import com.support.android.designlibdemo.social.Social;
+import com.support.android.designlibdemo.social_manager.Social;
 
 import static com.support.android.designlibdemo.R.drawable;
 import static com.support.android.designlibdemo.R.id;
