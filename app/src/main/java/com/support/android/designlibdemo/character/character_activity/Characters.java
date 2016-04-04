@@ -25,7 +25,7 @@ public class Characters {                                                       
         characterDatas.put("Volstagg", new CharacterData("Volstagg", R.drawable.volstagg, R.drawable.volstagg_dial));
         characterDatas.put("Valkyrie", new CharacterData("Valkyrie", R.drawable.valkyrie, R.drawable.valkyrie_dial));
         characterDatas.put("Wonder Man", new CharacterData("Wonder Man", R.drawable.wonder_man, R.drawable.wonder_man_dial));
-        characterDatas.put("Ares", new CharacterData("Ares", R.drawable.ares, R.drawable.ares));
+        characterDatas.put("Ares", new CharacterData("Ares", R.drawable.ares, R.drawable.ares_dial));
         characterDatas.put("Heimdall", new CharacterData("Heimdall", R.drawable.heimdall, R.drawable.heimdall_dial));
         characterDatas.put("Iceman", new CharacterData("Iceman", R.drawable.iceman, R.drawable.iceman_dial));
         characterDatas.put("Anti-Venom", new CharacterData("Anti-Venom", R.drawable.anti_venom, R.drawable.anti_venom_dial));
