@@ -81,6 +81,7 @@ public class Characters {                                                       
         characterDatas.put("Storm", new CharacterData("Storm", R.drawable.storm, R.drawable.storm_dial));
         characterDatas.put("Electro", new CharacterData("Electro", R.drawable.electro, R.drawable.electro_dial));
         characterDatas.put("Elsa Bloodstone", new CharacterData("Elsa Bloodstone", R.drawable.elsa_bloodstone, R.drawable.elsa_bloodstone_dial));
+        characterDatas.put("Shocker", new CharacterData("Shocker", R.drawable.shocker, R.drawable.shocker_dial));
         return characterDatas;
     }
 
@@ -112,8 +113,7 @@ public class Characters {                                                       
         characterDatas.put("Union Jack", new CharacterData("Union Jack", R.drawable.union_jack, R.drawable.union_jack_dial));
         characterDatas.put("Wolverine", new CharacterData("Wolverine", R.drawable.wolverine, R.drawable.wolverine_dial));
         characterDatas.put("Kamala Khan", new CharacterData("Kamala Khan", R.drawable.kamala_khan, R.drawable.kamala_khan_dial));
-        //TODO: MANCA DIALOG IMAGE
-        characterDatas.put("Hellcat", new CharacterData("Hellcat", R.drawable.hellcat, R.drawable.example_dialogue));
+        characterDatas.put("Hellcat", new CharacterData("Hellcat", R.drawable.hellcat, R.drawable.hellcat_dial));
         return characterDatas;
     }
 
@@ -146,6 +146,7 @@ public class Characters {                                                       
         characterDatas.put("War Machine", new CharacterData("War Machine", R.drawable.war_machine, R.drawable.war_machine_dial));
         characterDatas.put("Lizard", new CharacterData("Lizard", R.drawable.lizard, R.drawable.lizard_dial));
         characterDatas.put("Kraven the Hunter", new CharacterData("Kraven the Hunter", R.drawable.kraven, R.drawable.kraven_dial));
+        characterDatas.put("Cammi", new CharacterData("Cammi", R.drawable.cammi, R.drawable.cammi_dial));
         return characterDatas;
     }
 
@@ -177,6 +178,7 @@ public class Characters {                                                       
         characterDatas.put("Spider-Man", new CharacterData("Spider-Man", R.drawable.spider_man, R.drawable.spiderman_dial));
         characterDatas.put("Tigra", new CharacterData("Tigra", R.drawable.tigra, R.drawable.tigra_dial));
         characterDatas.put("Wasp", new CharacterData("Wasp", R.drawable.wasp, R.drawable.wasp_dial));
+        characterDatas.put("Cloak and Dagger", new CharacterData("Cloak and Dagger", R.drawable.cloak_and_dagger, R.drawable.cloak_and_dagger_dial));
         return characterDatas;
     }
 
@@ -215,6 +217,7 @@ public class Characters {                                                       
         characterDatas.put("Blizzard", new CharacterData("Blizzard", R.drawable.blizzard, R.drawable.blizzard_dial));
         characterDatas.put("Baron Mordo", new CharacterData("Baron Mordo", R.drawable.baron_mordo, R.drawable.baron_mordo_dial));
         characterDatas.put("Electro", new CharacterData("Electro", R.drawable.electro, R.drawable.electro_dial));
+        characterDatas.put("Shocker", new CharacterData("Shocker", R.drawable.shocker, R.drawable.shocker_dial));
         return characterDatas;
     }
 
@@ -316,6 +319,7 @@ public class Characters {                                                       
         characterDatas.put("Hank Pym", new CharacterData("Hank Pym", R.drawable.hank_pym, R.drawable.hank_pym_dial));
         characterDatas.put("Rescue", new CharacterData("Rescue", R.drawable.rescue, R.drawable.rescue_dial));
         characterDatas.put("Black Bolt", new CharacterData("Black Bolt", R.drawable.black_bolt, R.drawable.black_bolt_dial));
+        characterDatas.put("Cammi", new CharacterData("Cammi", R.drawable.cammi, R.drawable.cammi_dial));
         return characterDatas;
     }
 
@@ -349,7 +353,7 @@ public class Characters {                                                       
         characterDatas.put("Karnak", new CharacterData("Karnak", R.drawable.karnak, R.drawable.karnak_dial));
         characterDatas.put("Angela", new CharacterData("Angela", R.drawable.angela, R.drawable.angela_dial));
         //TODO: MANCA DIALOG IMAGE
-        characterDatas.put("Hellcat", new CharacterData("Hellcat", R.drawable.hellcat, R.drawable.example_dialogue));
+        characterDatas.put("Hellcat", new CharacterData("Hellcat", R.drawable.hellcat, R.drawable.hellcat_dial));
         return characterDatas;
     }
 
@@ -360,6 +364,7 @@ public class Characters {                                                       
         characterDatas.put("Agent Venom", new CharacterData("Agent Venom", R.drawable.agent_venom, R.drawable.agent_venom_dial));
         characterDatas.put("Victor Mancha", new CharacterData("Victor Mancha", R.drawable.victor_mancha, R.drawable.victor_mancha_dial));
         characterDatas.put("A-Bomb", new CharacterData("A-Bomb", R.drawable.a_bomb, R.drawable.a_bomb_dial));
+        characterDatas.put("Cloak and Dagger", new CharacterData("Cloak and Dagger", R.drawable.cloak_and_dagger, R.drawable.cloak_and_dagger_dial));
         return characterDatas;
     }
 
