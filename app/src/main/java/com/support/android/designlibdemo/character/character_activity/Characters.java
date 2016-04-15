@@ -82,6 +82,7 @@ public class Characters {                                                       
         characterDatas.put("Electro", new CharacterData("Electro", R.drawable.electro, R.drawable.electro_dial));
         characterDatas.put("Elsa Bloodstone", new CharacterData("Elsa Bloodstone", R.drawable.elsa_bloodstone, R.drawable.elsa_bloodstone_dial));
         characterDatas.put("Shocker", new CharacterData("Shocker", R.drawable.shocker, R.drawable.shocker_dial));
+        characterDatas.put("Death locket", new CharacterData("Death locket", R.drawable.death_locket, R.drawable.death_locket_dial));
         return characterDatas;
     }
 
@@ -397,6 +398,7 @@ public class Characters {                                                       
         characterDatas.put("Sunfire", new CharacterData("Sunfire", R.drawable.sunfire, R.drawable.sunfire_dial));
         characterDatas.put("Blizzard", new CharacterData("Blizzard", R.drawable.blizzard, R.drawable.blizzard_dial));
         characterDatas.put("Hybrid", new CharacterData("Hybrid", R.drawable.hybrid, R.drawable.hybrid_dial));
+        characterDatas.put("Death locket", new CharacterData("Death locket", R.drawable.death_locket, R.drawable.death_locket_dial));
         return characterDatas;
     }
 
