@@ -17,10 +17,10 @@
             android:id="@+id/nav_heroes"
             android:icon="@drawable/ic_event"
             android:title="Heroes" />
-        <item
+       <!-- <item
             android:id="@+id/nav_enemies"
             android:icon="@drawable/ic_headset"
-            android:title="Enemies" />
+            android:title="Enemies" /> -->
         <item
             android:id="@+id/nav_lockbox"
             android:icon="@drawable/ic_headset"
@@ -37,10 +37,10 @@
             android:id="@+id/nav_coverthero"
             android:icon="@drawable/ic_headset"
             android:title="Covert task heroes" />
-        <item
+        <!-- <item
             android:id="@+id/nav_group_boss"
             android:icon="@drawable/ic_headset"
-            android:title="Group boss" />
+            android:title="Group boss" /> -->
     </group>
 
     <item android:title="Follow us:">

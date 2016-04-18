@@ -114,10 +114,10 @@ public class MainActivity extends AppCompatActivity{
                                 drawerMenuHelper(menuItem, type);
                                 return true;
 
-                            case id.nav_enemies:
+                            /*  case id.nav_enemies:
                                 type = "enemy";
                                 drawerMenuHelper(menuItem, type);
-                                return true;
+                                return true; */
 
                             case id.nav_lockbox:
                                 type = "lockbox";
@@ -139,10 +139,10 @@ public class MainActivity extends AppCompatActivity{
                                 drawerMenuHelper(menuItem, type);
                                 return true;
 
-                            case id.nav_group_boss:
+                            /*case id.nav_group_boss:
                                 type = "groupboss";
                                 drawerMenuHelper(menuItem, type);
-                                return true;
+                                return true;*/
 
                             case id.facebook:
                                 //PackageManager pm = getPackageManager();
