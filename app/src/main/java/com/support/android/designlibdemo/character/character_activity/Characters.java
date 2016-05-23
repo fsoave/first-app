@@ -115,6 +115,7 @@ public class Characters {                                                       
         characterDatas.put("Wolverine", new CharacterData("Wolverine", R.drawable.wolverine, R.drawable.wolverine_dial));
         characterDatas.put("Kamala Khan", new CharacterData("Kamala Khan", R.drawable.kamala_khan, R.drawable.kamala_khan_dial));
         characterDatas.put("Hellcat", new CharacterData("Hellcat", R.drawable.hellcat, R.drawable.hellcat_dial));
+        characterDatas.put("Thor - Jane Foster", new CharacterData("Thor - Jane Foster", R.drawable.thor_jane, R.drawable.thor_jane_dial));
         return characterDatas;
     }
 
@@ -148,6 +149,7 @@ public class Characters {                                                       
         characterDatas.put("Lizard", new CharacterData("Lizard", R.drawable.lizard, R.drawable.lizard_dial));
         characterDatas.put("Kraven the Hunter", new CharacterData("Kraven the Hunter", R.drawable.kraven, R.drawable.kraven_dial));
         characterDatas.put("Cammi", new CharacterData("Cammi", R.drawable.cammi, R.drawable.cammi_dial));
+        characterDatas.put("Beetle", new CharacterData("Beetle", R.drawable.beetle, R.drawable.beetle_dial));
         return characterDatas;
     }
 
@@ -198,6 +200,7 @@ public class Characters {                                                       
         characterDatas.put("Beast", new CharacterData("Beast", R.drawable.beast, R.drawable.beast_dial));
         characterDatas.put("Rogue", new CharacterData("Rogue", R.drawable.rogue, R.drawable.rogue_dial));
         characterDatas.put("Spider-Man Noir", new CharacterData("Spider-Man Noir", R.drawable.spider_man_noir, R.drawable.spiderman_noir_dial));
+        characterDatas.put("Blue Marvel", new CharacterData("Blue Marvel", R.drawable.blue_marvel, R.drawable.blue_marvel_dial));
         return characterDatas;
     }
 
@@ -294,6 +297,7 @@ public class Characters {                                                       
         characterDatas.put("Blade", new CharacterData("Blade", R.drawable.blade, R.drawable.blade_dial));
         characterDatas.put("Chase Stein", new CharacterData("Chase Stein", R.drawable.chase_stein, R.drawable.chase_stein_dial));
         characterDatas.put("Spitfire", new CharacterData("Spitfire", R.drawable.spitfire, R.drawable.spitfire_dial));
+        characterDatas.put("Thor - Jane Foster", new CharacterData("Thor - Jane Foster", R.drawable.thor_jane, R.drawable.thor_jane_dial));
         return characterDatas;
     }
 
@@ -311,6 +315,7 @@ public class Characters {                                                       
         characterDatas.put("Mockingbird", new CharacterData("Mockingbird", R.drawable.mockingbird, R.drawable.mockingbird_dial));
         characterDatas.put("Silk", new CharacterData("Silk", R.drawable.silk, R.drawable.silk_dial));
         characterDatas.put("Red She-Hulk", new CharacterData("Red She-Hulk", R.drawable.redshehulk, R.drawable.redshehulk_dial));
+        characterDatas.put("Blue Marvel", new CharacterData("Blue Marvel", R.drawable.blue_marvel, R.drawable.blue_marvel_dial));
         return characterDatas;
     }
 
@@ -374,6 +379,7 @@ public class Characters {                                                       
         characterDatas.put("Fantomex", new CharacterData("Fantomex", R.drawable.fantomex, R.drawable.fantomex_dial));
         characterDatas.put("Red Hulk", new CharacterData("Red Hulk", R.drawable.red_hulk, R.drawable.red_hulk_dial));
         characterDatas.put("Kraven the Hunter", new CharacterData("Kraven the Hunter", R.drawable.kraven, R.drawable.kraven_dial));
+        characterDatas.put("Beetle", new CharacterData("Beetle", R.drawable.beetle, R.drawable.beetle_dial));
         return characterDatas;
     }
 
