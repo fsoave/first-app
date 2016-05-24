@@ -149,7 +149,6 @@ public class Characters {                                                       
         characterDatas.put("Lizard", new CharacterData("Lizard", R.drawable.lizard, R.drawable.lizard_dial));
         characterDatas.put("Kraven the Hunter", new CharacterData("Kraven the Hunter", R.drawable.kraven, R.drawable.kraven_dial));
         characterDatas.put("Cammi", new CharacterData("Cammi", R.drawable.cammi, R.drawable.cammi_dial));
-        characterDatas.put("Beetle", new CharacterData("Beetle", R.drawable.beetle, R.drawable.beetle_dial));
         return characterDatas;
     }
 
@@ -182,6 +181,7 @@ public class Characters {                                                       
         characterDatas.put("Tigra", new CharacterData("Tigra", R.drawable.tigra, R.drawable.tigra_dial));
         characterDatas.put("Wasp", new CharacterData("Wasp", R.drawable.wasp, R.drawable.wasp_dial));
         characterDatas.put("Cloak and Dagger", new CharacterData("Cloak and Dagger", R.drawable.cloak_and_dagger, R.drawable.cloak_and_dagger_dial));
+        characterDatas.put("Beetle", new CharacterData("Beetle", R.drawable.beetle, R.drawable.beetle_dial));
         return characterDatas;
     }
 
@@ -371,6 +371,7 @@ public class Characters {                                                       
         characterDatas.put("Victor Mancha", new CharacterData("Victor Mancha", R.drawable.victor_mancha, R.drawable.victor_mancha_dial));
         characterDatas.put("A-Bomb", new CharacterData("A-Bomb", R.drawable.a_bomb, R.drawable.a_bomb_dial));
         characterDatas.put("Cloak and Dagger", new CharacterData("Cloak and Dagger", R.drawable.cloak_and_dagger, R.drawable.cloak_and_dagger_dial));
+        characterDatas.put("Beetle", new CharacterData("Beetle", R.drawable.beetle, R.drawable.beetle_dial));
         return characterDatas;
     }
 
@@ -379,7 +380,6 @@ public class Characters {                                                       
         characterDatas.put("Fantomex", new CharacterData("Fantomex", R.drawable.fantomex, R.drawable.fantomex_dial));
         characterDatas.put("Red Hulk", new CharacterData("Red Hulk", R.drawable.red_hulk, R.drawable.red_hulk_dial));
         characterDatas.put("Kraven the Hunter", new CharacterData("Kraven the Hunter", R.drawable.kraven, R.drawable.kraven_dial));
-        characterDatas.put("Beetle", new CharacterData("Beetle", R.drawable.beetle, R.drawable.beetle_dial));
         return characterDatas;
     }
 
