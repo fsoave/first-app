@@ -22,6 +22,9 @@ import static com.support.android.designlibdemo.R.drawable;
 import static com.support.android.designlibdemo.R.id;
 import static com.support.android.designlibdemo.R.layout;
 
+import com.github.clans.fab.FloatingActionButton;
+import com.github.clans.fab.FloatingActionMenu;
+
 public class MainActivity extends AppCompatActivity{
 
     private DrawerLayout mDrawerLayout;
@@ -30,6 +33,9 @@ public class MainActivity extends AppCompatActivity{
     private String option_type;
 
     Social socialManager = new Social();
+
+    FloatingActionMenu materialDesignFAM;
+    FloatingActionButton floatingActionButton1, floatingActionButton2, floatingActionButton3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,7 +58,35 @@ public class MainActivity extends AppCompatActivity{
             setupDrawerContent(navigationView);
         }
 
+        materialDesignFAM = (FloatingActionMenu) findViewById(R.id.material_design_android_floating_action_menu);
+        floatingActionButton1 = (FloatingActionButton) findViewById(R.id.material_design_floating_action_menu_item1);
+        floatingActionButton2 = (FloatingActionButton) findViewById(R.id.material_design_floating_action_menu_item2);
+        floatingActionButton3 = (FloatingActionButton) findViewById(R.id.material_design_floating_action_menu_item3);
+
+        floatingActionButton1.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                //TODO something when floating action menu first item clicked
+                Snackbar.make(v, "Hero added to roaster", Snackbar.LENGTH_LONG)
+                        //.setAction(R.string.snackbar_action_undo, clickListener)
+                        .setAction("Action", null).show();
+
+            }
+        });
+        floatingActionButton2.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                //TODO something when floating action menu second item clicked
+
+            }
+        });
+        floatingActionButton3.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                //TODO something when floating action menu third item clicked
+
+            }
+        });
+
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
