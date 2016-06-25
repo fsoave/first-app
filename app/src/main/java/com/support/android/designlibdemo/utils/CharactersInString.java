@@ -28,6 +28,6 @@ public class CharactersInString {
             "Maximus the Mad", "Hela", "Ymir", "Surtur", "Kuurth", "Kraven", "Flag-Smasher",
             "Ultimate Ultron", "Karn", "Electro","Umar", "Hammer Head", "Morgan Le Fay", "Morlun",
             "Nerkkod", "YellowJacket", "Bob", "Prime Sentinel", "Purple Man", "Beetle", "Shocker",
-            "The Owl", "Mandarin", "The Leader", "Zzzax", "Count Nefaria",
+            "The Owl", "Mandarin", "The Leader", "Zzzax", "Count Nefaria","Black Vortex",
     };
 }
