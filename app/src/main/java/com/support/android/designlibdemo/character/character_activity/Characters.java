@@ -116,6 +116,7 @@ public class Characters {                                                       
         characterDatas.put("Kamala Khan", new CharacterData("Kamala Khan", R.drawable.kamala_khan, R.drawable.kamala_khan_dial));
         characterDatas.put("Hellcat", new CharacterData("Hellcat", R.drawable.hellcat, R.drawable.hellcat_dial));
         characterDatas.put("Thor - Jane Foster", new CharacterData("Thor - Jane Foster", R.drawable.thor_jane, R.drawable.thor_jane_dial));
+        characterDatas.put("Mantis", new CharacterData("Mantis", R.drawable.mantis, R.drawable.mantis_dial));
         return characterDatas;
     }
 
@@ -182,6 +183,7 @@ public class Characters {                                                       
         characterDatas.put("Wasp", new CharacterData("Wasp", R.drawable.wasp, R.drawable.wasp_dial));
         characterDatas.put("Cloak and Dagger", new CharacterData("Cloak and Dagger", R.drawable.cloak_and_dagger, R.drawable.cloak_and_dagger_dial));
         characterDatas.put("Beetle", new CharacterData("Beetle", R.drawable.beetle, R.drawable.beetle_dial));
+        characterDatas.put("Moondragon", new CharacterData("Moondragon", R.drawable.moondragon, R.drawable.moondragon_dial));
         return characterDatas;
     }
 
@@ -298,6 +300,7 @@ public class Characters {                                                       
         characterDatas.put("Chase Stein", new CharacterData("Chase Stein", R.drawable.chase_stein, R.drawable.chase_stein_dial));
         characterDatas.put("Spitfire", new CharacterData("Spitfire", R.drawable.spitfire, R.drawable.spitfire_dial));
         characterDatas.put("Thor - Jane Foster", new CharacterData("Thor - Jane Foster", R.drawable.thor_jane, R.drawable.thor_jane_dial));
+        characterDatas.put("Mantis", new CharacterData("Mantis", R.drawable.mantis, R.drawable.mantis_dial));
         return characterDatas;
     }
 
@@ -431,6 +434,7 @@ public class Characters {                                                       
         characterDatas = new TreeMap<>();
         characterDatas.put("Shanna", new CharacterData("Shanna", R.drawable.shanna, R.drawable.shanna_dial));
         characterDatas.put("Morbius", new CharacterData("Morbius", R.drawable.morbius, R.drawable.morbius_dial));
+        characterDatas.put("Moondragon", new CharacterData("Moondragon", R.drawable.moondragon, R.drawable.moondragon_dial));
         return characterDatas;
     }
 
