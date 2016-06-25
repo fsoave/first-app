@@ -2,7 +2,6 @@ package com.support.android.designlibdemo.character.character_activity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
@@ -14,10 +13,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
+import com.github.clans.fab.FloatingActionMenu;
 import com.support.android.designlibdemo.R;
 
 import java.util.ArrayList;
 import java.util.List;
+
+
 
 /**
  * Created by fabio on 22/10/15.
@@ -30,6 +32,9 @@ public class CharacterActivity extends AppCompatActivity {
     private View content;
 
     private String class_type[] = {"Blaster","Bruiser","Tactical","Scrapper","Infiltrator","Generalist"};
+
+    FloatingActionMenu materialDesignFAM;
+    com.github.clans.fab.FloatingActionButton floatingActionButton1, floatingActionButton2, floatingActionButton3;
 
 
     private int[] tabIcons = {
@@ -68,18 +73,38 @@ public class CharacterActivity extends AppCompatActivity {
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(viewPager);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                //prendi tutti gli eroi selezionati e falli diventare "miei"
-                Snackbar.make(view, "Hero added to roaster", Snackbar.LENGTH_LONG)
-                        //.setAction(R.string.snackbar_action_undo, clickListener)
-                        .setAction("Action", null).show();
-            }
-        });
+        FABInit();
 
         setupTabIcons(tabLayout);
+    }
+
+    public void FABInit(){
+        materialDesignFAM = (FloatingActionMenu) findViewById(R.id.char_material_design_android_floating_action_menu);
+        floatingActionButton1 = (com.github.clans.fab.FloatingActionButton) findViewById(R.id.char_material_design_floating_action_menu_item1);
+        floatingActionButton2 = (com.github.clans.fab.FloatingActionButton) findViewById(R.id.char_material_design_floating_action_menu_item2);
+        floatingActionButton3 = (com.github.clans.fab.FloatingActionButton) findViewById(R.id.char_material_design_floating_action_menu_item3);
+
+        floatingActionButton1.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                //TODO something when floating action menu first item clicked
+                Snackbar.make(v, "Hero added to roaster", Snackbar.LENGTH_LONG)
+                        //.setAction(R.string.snackbar_action_undo, clickListener)
+                        .setAction("Action", null).show();
+
+            }
+        });
+        floatingActionButton2.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                //TODO something when floating action menu second item clicked
+
+            }
+        });
+        floatingActionButton3.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                //TODO something when floating action menu third item clicked
+
+            }
+        });
     }
 
     private void setupTabIcons(TabLayout tabLayout) {
