@@ -83,6 +83,7 @@ public class Characters {                                                       
         characterDatas.put("Elsa Bloodstone", new CharacterData("Elsa Bloodstone", R.drawable.elsa_bloodstone, R.drawable.elsa_bloodstone_dial));
         characterDatas.put("Shocker", new CharacterData("Shocker", R.drawable.shocker, R.drawable.shocker_dial));
         characterDatas.put("Death locket", new CharacterData("Death locket", R.drawable.death_locket, R.drawable.death_locket_dial));
+        characterDatas.put("Richard Rider", new CharacterData("Richard Rider", R.drawable.richard_rider, R.drawable.richard_rider_dial));
         return characterDatas;
     }
 
@@ -117,6 +118,8 @@ public class Characters {                                                       
         characterDatas.put("Hellcat", new CharacterData("Hellcat", R.drawable.hellcat, R.drawable.hellcat_dial));
         characterDatas.put("Thor - Jane Foster", new CharacterData("Thor - Jane Foster", R.drawable.thor_jane, R.drawable.thor_jane_dial));
         characterDatas.put("Mantis", new CharacterData("Mantis", R.drawable.mantis, R.drawable.mantis_dial));
+        characterDatas.put("Knight America", new CharacterData("Knight America", R.drawable.knight_america, R.drawable.knight_america_dial));
+
         return characterDatas;
     }
 
@@ -150,6 +153,7 @@ public class Characters {                                                       
         characterDatas.put("Lizard", new CharacterData("Lizard", R.drawable.lizard, R.drawable.lizard_dial));
         characterDatas.put("Kraven the Hunter", new CharacterData("Kraven the Hunter", R.drawable.kraven, R.drawable.kraven_dial));
         characterDatas.put("Cammi", new CharacterData("Cammi", R.drawable.cammi, R.drawable.cammi_dial));
+        characterDatas.put("Songbird", new CharacterData("Songbird", R.drawable.songbird, R.drawable.songbird_dial));
         return characterDatas;
     }
 
@@ -383,6 +387,7 @@ public class Characters {                                                       
         characterDatas.put("Fantomex", new CharacterData("Fantomex", R.drawable.fantomex, R.drawable.fantomex_dial));
         characterDatas.put("Red Hulk", new CharacterData("Red Hulk", R.drawable.red_hulk, R.drawable.red_hulk_dial));
         characterDatas.put("Kraven the Hunter", new CharacterData("Kraven the Hunter", R.drawable.kraven, R.drawable.kraven_dial));
+        characterDatas.put("Songbird", new CharacterData("Songbird", R.drawable.songbird, R.drawable.songbird_dial));
         return characterDatas;
     }
 
@@ -414,6 +419,7 @@ public class Characters {                                                       
     public static Map<String, CharacterData > getCovertScrapper(){
         characterDatas = new TreeMap<>();
         characterDatas.put("Squirrel Girl", new CharacterData("Squirrel Girl", R.drawable.squirrel_girl, R.drawable.squirrel_girl_dial));
+        characterDatas.put("Knight America", new CharacterData("Knight America", R.drawable.knight_america, R.drawable.knight_america_dial));
         return characterDatas;
     }
 
