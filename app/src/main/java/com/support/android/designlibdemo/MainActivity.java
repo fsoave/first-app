@@ -3,6 +3,7 @@ package com.support.android.designlibdemo;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
 import android.support.v4.view.GravityCompat;
@@ -214,6 +215,29 @@ public class MainActivity extends AppCompatActivity{
         Intent intent = new Intent(content.getContext(), CharacterActivity.class);
         intent.putExtra("character_type", type);
         startActivity(intent);
+    }
+
+    boolean doubleBackToExitPressedOnce = false;
+
+    @Override
+    public void onBackPressed() {
+        if (doubleBackToExitPressedOnce) {
+            super.onBackPressed();
+            return;
+        }
+
+        this.doubleBackToExitPressedOnce = true;
+        Snackbar.make(content, "Please click BACK again to exit", Snackbar.LENGTH_SHORT)
+                .setAction("Action", null).show();
+
+
+        new Handler().postDelayed(new Runnable() {
+
+            @Override
+            public void run() {
+                doubleBackToExitPressedOnce=false;
+            }
+        }, 2000);
     }
 
 }
